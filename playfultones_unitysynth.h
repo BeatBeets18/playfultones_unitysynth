@@ -5,7 +5,7 @@ version:          1.0.0
 name:             playfultones_unitysynth
 description:      Wrapper class for synth plugins used in Unity.
 website:          https://github.com/playfultones
-license:          MIT
+license:          GPL-3.0
 dependencies:     juce_audio_basics
 END_JUCE_MODULE_DECLARATION
 */

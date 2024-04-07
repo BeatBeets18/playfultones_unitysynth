@@ -16,3 +16,4 @@ END_JUCE_MODULE_DECLARATION
 
 #include "src/UnityInterfaceHelpers.h"
 #include "src/UnitySynth.h"
+#include "src/UnityLogger.h"

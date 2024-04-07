@@ -9,3 +9,4 @@
 #include "playfultones_unitysynth/playfultones_unitysynth.h"
 
 #include "src/UnitySynth.cpp"
+#include "src/UnityLogger.cpp"

@@ -14,4 +14,5 @@ END_JUCE_MODULE_DECLARATION
 
 #include <juce_audio_basics/juce_audio_basics.h>
 
+#include "src/UnityInterfaceHelpers.h"
 #include "src/UnitySynth.h"

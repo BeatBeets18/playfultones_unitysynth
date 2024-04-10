@@ -10,3 +10,4 @@
 
 #include "src/UnitySynth.cpp"
 #include "src/MultiLevelLogger.cpp"
+#include "src/EditorWrapper.cpp"

@@ -3,9 +3,8 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-    UNITY_INTERFACE_EXPORT void* UNITY_INTERFACE_API getInstance();
-    UNITY_INTERFACE_EXPORT void  UNITY_INTERFACE_API noteOn(void* ptr, int noteNumber, float velocity);
-    UNITY_INTERFACE_EXPORT void  UNITY_INTERFACE_API noteOff(void* ptr, int noteNumber);
+    UNITY_INTERFACE_EXPORT void  UNITY_INTERFACE_API noteOn(int noteNumber, float velocity);
+    UNITY_INTERFACE_EXPORT void  UNITY_INTERFACE_API noteOff(int noteNumber);
 #ifdef __cplusplus
 }
 #endif

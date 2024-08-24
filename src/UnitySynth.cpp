@@ -2,23 +2,18 @@
 extern "C" {
 #endif
 
-UNITY_INTERFACE_EXPORT void* UNITY_INTERFACE_API getInstance()
+UNITY_INTERFACE_EXPORT void UNITY_INTERFACE_API noteOn(int noteNumber, float velocity)
 {
-    return playfultones::UnityWrapper::instance;
+    if(playfultones::UnityWrapper::instance == nullptr)
+        return;
+    playfultones::UnityWrapper::instance->noteOn(1, noteNumber, velocity);
 }
 
-UNITY_INTERFACE_EXPORT void UNITY_INTERFACE_API noteOn(void* ptr, int noteNumber, float velocity)
+UNITY_INTERFACE_EXPORT void UNITY_INTERFACE_API noteOff(int noteNumber)
 {
-    jassert(ptr != nullptr);
-    playfultones::UnitySynth* synth = static_cast<playfultones::UnitySynth*>(ptr);
-    synth->noteOn(1, noteNumber, velocity);
-}
-
-UNITY_INTERFACE_EXPORT void UNITY_INTERFACE_API noteOff(void* ptr, int noteNumber)
-{
-    jassert(ptr != nullptr);
-    playfultones::UnitySynth* synth = static_cast<playfultones::UnitySynth*>(ptr);
-    synth->noteOff(1, noteNumber, 1);
+    if(playfultones::UnityWrapper::instance == nullptr)
+        return;
+    playfultones::UnityWrapper::instance->noteOff(1, noteNumber, 1);
 }
 
 #ifdef __cplusplus
